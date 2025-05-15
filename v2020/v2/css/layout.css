@@ -1,0 +1,5 @@
+@media (max-width: 1600px)
+{
+    .layui-main {width: 1200px;}
+    .top-search-menu .layui-nav-child.menu-all-box{width:1200px;}
+}

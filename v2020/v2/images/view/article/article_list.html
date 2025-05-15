@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>{$info['title']??($title ? $title : $config.title)}</title>
+<link rel="stylesheet" type="text/css" href="/static/jxdqpy/style/style.css?id=20200228001" />
+</head>
+<body>
+<div class="headerart"></div>
+<div class="artbox">
+<div class="listtext"></div>
+  <div class="cbody w1003">
+    <div class="artmain">
+    
+     <div class="artp">
+       {if $lists}
+        <ul class="artk">
+          {volist name="lists" id="vo"}
+          <li><a href="{if $vo.wurl}{$vo.wurl}{else/}{$vo.url}{/if}" target="_blank">{$vo.title}</a></li>
+          {/volist}
+          
+        </ul>
+        {else/}
+       <div class="fly-none">没有相关数据</div>
+        {/if}
+     </div>
+     
+     <div>
+     {$page|raw}
+     </div>
+    </div>
+  </div>
+</div>
+{include file='common/footer'}
+</body>
+</html>

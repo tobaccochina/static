@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+		<title>攻坚克难当先锋 决战决胜作表率</title>
+		<link rel="stylesheet" type="text/css" href="/static/jxfpzt/style/style.css?id=202002280013" />
+	</head>
+	<body>
+		{include file='common/head'}
+        <div class="cbody w1003 box">
+			<div class="omain2">
+				<div class="title-box">
+					<div class="title-box-img"><a href="" target="_blank">{$title}</a></div>
+				</div>
+				<div class="content">
+					<div class="imglist imb20">
+						
+						{if $lists}
+						      <ul class="clearfix">
+						        {volist name="lists" id="vo"}
+								 <li><a href="{if $vo.wurl}{$vo.wurl}{else/}{$vo.url}{/if}" target="_blank"><img src="{$vo.thumb}" /></a></li>
+								 
+								 
+								 
+								{/volist}
+						        
+						      </ul>
+						      {else/}
+						     <div class="fly-none">没有相关数据</div>
+						      {/if}
+						
+						
+						
+					</div>
+				</div>
+				<div class="pages">{$page|raw}</div>
+			</div>
+		</div>
+
+		{include file='common/footer'}
+	</body>
+</html>

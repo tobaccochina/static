@@ -1,0 +1,10 @@
+.link{padding:0px 10px;}
+.link-mallki:hover{color:#fff;background-color:#111;}
+.header-top-right a.a1{margin:0px;}
+.layui-nav-child {box-shadow: 0 2px 4px rgba(0,0,0,.12);border: 1px solid #d2d2d2;white-space: nowrap;}
+.search-banner-box{border-bottom:solid 1px #f0f0f0;}
+.layui-nav-item a.a1{background:url(../images/i2_17.jpg) no-repeat center right;}
+.layui-nav-item a.a1:hover{background-image:url(../images/i2_17u.jpg)}
+.layui-input-h31{line-height:30px;}
+.layui-carousel-arrow{background:none;}
+.detail-body .search-banner-box{border:none;}
